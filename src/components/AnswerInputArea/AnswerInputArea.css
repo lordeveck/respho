@@ -1,0 +1,36 @@
+.answer-input-area {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 2px;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.answer-button {
+  background-color: hsl(139deg 27% 49%);
+  color: #fff;
+  border-radius: 4px;
+  height: 40px;
+  padding: 0 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 4px;
+  border: 0;
+}
+
+.answer-input {
+  flex: 1;
+  border: 0;
+  border-radius: 4px;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  /* height: 32px; */
+  font-size: 16px;
+}
+
+.change-resolutions {
+  background-color: rgb(211, 175, 56);
+}

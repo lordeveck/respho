@@ -1,0 +1,18 @@
+.answer-area {
+  width: 100%;
+}
+
+.answer {
+  background-color: #393939;
+  margin-top: 16px;
+  border-radius: 2px;
+  height: 36px;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.1), 0 1px 4px hsla(0, 0%, 0%, 0.1),
+    0 2px 8px hsla(0, 0%, 0%, 0.1);
+}

@@ -1,0 +1,12 @@
+.daily-question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+/* .img-canvas {
+  width: 300px;
+  height: 300px;
+} */
