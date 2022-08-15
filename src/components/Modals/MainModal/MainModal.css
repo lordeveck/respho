@@ -28,9 +28,9 @@
   font-size: 14px;
 }
 
-.description {
+/* .description {
   margin: 16px 0px;
-}
+} */
 
 .modal-content {
   margin: 16px;
@@ -44,7 +44,13 @@
 }
 
 .modal-footer {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer {
+  margin-right: 32px;
 }
 
 .game-buttons {
@@ -55,7 +61,7 @@
   width: 100%;
 }
 
-.game-buttons > div {
+.game-buttons>div {
   position: relative;
 }
 
@@ -70,4 +76,9 @@
   margin: 4px;
   border: 0;
   width: 100%;
+}
+
+.link {
+  color: hsl(139deg 27% 49%);
+  text-decoration: none;
 }

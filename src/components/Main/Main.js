@@ -13,7 +13,7 @@ function Main() {
     const [mainModal, setMainModal] = useState({ show: true, type: 'infoModal' });
 
     useEffect(() => {
-        setQuestion(questions[2]);
+        setQuestion(questions[0]);
     }, []);
 
     const openModal = (type = 'infoModal') => {
@@ -25,12 +25,22 @@ function Main() {
 
     const answerSubmit = (answer) => {
         if (question.answers.includes(answer)) {
-            openModal('gameStatsModal');
+            setAnswers((prevAnswers) => [...prevAnswers, {
+                value: answer,
+                class: 'success',
+            }]);
+
+            setTimeout(() => {
+                openModal('gameStatsModal');
+            }, 500);
             return;
         }
 
         if (answers.length < 6)
-            setAnswers((prevAnswers) => [...prevAnswers, answer]);
+            setAnswers((prevAnswers) => [...prevAnswers, {
+                value: answer,
+                class: 'wrong',
+            }]);
         else
             openModal('gameStatsModal');
     };
@@ -43,9 +53,11 @@ function Main() {
     };
 
     const changeResolution = () => {
-        console.log('talep');
         if (answers.length < 6)
-            setAnswers((prevAnswers) => [...prevAnswers, 'NETLEŞTİR']);
+            setAnswers((prevAnswers) => [...prevAnswers, {
+                value: 'NETLEŞTİRİLDİ',
+                class: 'pass',
+            }]);
     };
 
     return (

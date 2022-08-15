@@ -22,6 +22,14 @@ const questions = [
         answers: ['THE GODFATHER', 'BABA'],
         director: 'Francis Ford Coppola',
         topCast: ['Marlon Brando', 'Al Pacino', 'James Caan', 'Diane Keaton'],
+    },
+    {
+        img: 'https://m.media-amazon.com/images/M/MV5BOGQ4ZjFmYjktOGNkNS00OWYyLWIyZjgtMGJjM2U1ZTA0ZTlhXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg',
+        imgFrom: 'https://www.imdb.com/',
+        trailer: 'https://www.youtube.com/watch?v=UaVTIH8mujA',
+        answers: ['EŞKİYA'],
+        director: 'Francis Ford Coppola',
+        topCast: ['Marlon Brando', 'Al Pacino', 'James Caan', 'Diane Keaton'],
     }
 ];
 

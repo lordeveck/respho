@@ -3,7 +3,7 @@ import './DailyImage.css';
 
 function DailyImage(props) {
     const imgCanvas = useRef(null);
-    const [resolutions, setResolutions] = useState({ p: 10, q: 10, w: 235, h: 350 });
+    const [resolutions, setResolutions] = useState({ p: 5, q: 5, w: 235, h: 350 });
 
     useEffect(() => {
         setResolutions((currentResolutions) => {
