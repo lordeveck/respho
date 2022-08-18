@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "//lordeveck.github.io/respho/static/css/main.b511b3e4.css",
-    "main.js": "//lordeveck.github.io/respho/static/js/main.7b346871.js",
+    "main.css": "//lordeveck.github.io/respho/static/css/main.4a20ebfc.css",
+    "main.js": "//lordeveck.github.io/respho/static/js/main.5860b440.js",
     "static/js/787.96d6aecd.chunk.js": "//lordeveck.github.io/respho/static/js/787.96d6aecd.chunk.js",
     "index.html": "//lordeveck.github.io/respho/index.html",
-    "main.b511b3e4.css.map": "//lordeveck.github.io/respho/static/css/main.b511b3e4.css.map",
-    "main.7b346871.js.map": "//lordeveck.github.io/respho/static/js/main.7b346871.js.map",
+    "main.4a20ebfc.css.map": "//lordeveck.github.io/respho/static/css/main.4a20ebfc.css.map",
+    "main.5860b440.js.map": "//lordeveck.github.io/respho/static/js/main.5860b440.js.map",
     "787.96d6aecd.chunk.js.map": "//lordeveck.github.io/respho/static/js/787.96d6aecd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b511b3e4.css",
-    "static/js/main.7b346871.js"
+    "static/css/main.4a20ebfc.css",
+    "static/js/main.5860b440.js"
   ]
 }
