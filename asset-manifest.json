@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "//lordeveck.github.io/respho/static/css/main.3d664b6d.css",
-    "main.js": "//lordeveck.github.io/respho/static/js/main.26f901da.js",
+    "main.js": "//lordeveck.github.io/respho/static/js/main.e2915229.js",
     "static/js/27.946f8518.chunk.js": "//lordeveck.github.io/respho/static/js/27.946f8518.chunk.js",
     "index.html": "//lordeveck.github.io/respho/index.html"
   },
   "entrypoints": [
     "static/css/main.3d664b6d.css",
-    "static/js/main.26f901da.js"
+    "static/js/main.e2915229.js"
   ]
 }
