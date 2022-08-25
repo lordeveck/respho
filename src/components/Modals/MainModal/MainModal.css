@@ -18,7 +18,7 @@
   position: relative;
   border-radius: 8px;
   color: white;
-  width: 90%;
+  width: 95%;
   max-width: 500px;
   max-height: 95%;
   overflow-y: auto;
@@ -28,9 +28,9 @@
   font-size: 14px;
 }
 
-/* .description {
+.description {
   margin: 16px 0px;
-} */
+}
 
 .modal-content {
   margin: 16px;
@@ -49,10 +49,6 @@
   justify-content: center;
 }
 
-.timer {
-  margin-right: 32px;
-}
-
 .game-buttons {
   display: flex;
   justify-content: center;
@@ -61,7 +57,7 @@
   width: 100%;
 }
 
-.game-buttons>div {
+.game-buttons > div {
   position: relative;
 }
 
@@ -81,4 +77,11 @@
 .link {
   color: hsl(139deg 27% 49%);
   text-decoration: none;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  right: 2px;
+  top: 2px;
 }

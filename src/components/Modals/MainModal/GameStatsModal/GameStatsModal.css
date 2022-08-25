@@ -1,8 +1,62 @@
-.description {
+.game-stats-description {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  text-align: center;
   width: 100%;
+}
+
+.daily-question-answer {
+  text-align: center;
+  font-size: 16px;
+  width: 50%;
+}
+
+.answer-img-div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.wide {
+  width: 120px;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.share-area {
+  width: 50%;
+}
+
+.answer-img {
+  width: 235px;
+  height: 350px;
+  box-shadow: hsl(0deg 0% 0% / 10%) 1px 0px 20px 7px,
+    hsl(0deg 0% 0% / 10%) 0px 30px 60px -30px;
+}
+
+@media only screen and (max-device-width: 375px) {
+  .answer-img {
+    width: 135px;
+    height: 200px;
+  }
+
+  .daily-question-answer {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 376px) and (max-device-width: 420px) {
+  .answer-img {
+    width: 135px;
+    height: 200px;
+  }
+
+  .daily-question-answer {
+    font-size: 12px;
+  }
 }

@@ -30,7 +30,7 @@ function InfoModal(props) {
                         Her gün yenilenen görseller, düşük çözünürlük ile karşına gelir.
                     </p>
                     <p style={{ marginLeft: '15px' }}>
-                        Yaptığın her yanlış tahminde veya netleştir butonuna basman ile birlikte görsel daha çok netleşecektir.
+                        Yaptığın her yanlış tahminde veya netleştir butonuna &#40;?&#41; basman ile birlikte görsel daha çok netleşecektir.
                     </p>
                     <p style={{ marginLeft: '15px' }}>
                         6 hakkını bitirmeden, en kısa zamanda doğru tahmini yapmaya çalış!

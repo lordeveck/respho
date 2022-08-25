@@ -1,10 +1,13 @@
 .answer-input-area {
+  /* position: absolute;
+  bottom: 0px; */
   display: flex;
   align-items: center;
   background-color: white;
   border-radius: 2px;
-  width: 100%;
-  margin-top: 32px;
+  width: 96%;
+  margin-top: 16px;
+  max-width: 480px;
 }
 
 .answer-button {
@@ -12,6 +15,7 @@
   color: #fff;
   border-radius: 4px;
   height: 40px;
+  width: 80px;
   padding: 0 8px;
   cursor: pointer;
   font-size: 16px;
@@ -33,4 +37,34 @@
 
 .change-resolutions {
   background-color: rgb(211, 175, 56);
+}
+
+@media only screen and (min-device-width: 376px) and (max-device-width: 420px) {
+  .answer-input-area {
+    position: absolute;
+    bottom: 0px;
+  }
+
+  .answer-button {
+    font-size: 12px;
+    width: 64px;
+    height: 32px;
+  }
+}
+
+@media only screen and (max-device-width: 375px) {
+  .answer-input-area {
+    position: absolute;
+    bottom: 0px;
+  }
+
+  .answer-button {
+    font-size: 12px;
+    width: 64px;
+    height: 32px;
+  }
+
+  .answer-input {
+    font-size: 12px;
+  }
 }

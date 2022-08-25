@@ -1,0 +1,33 @@
+.category {
+  width: 80%;
+  background-color: #393939;
+  margin-bottom: 8px;
+  border-radius: 2px;
+  height: 64px;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.1), 0 1px 4px hsla(0, 0%, 0%, 0.1),
+    0 2px 8px hsla(0, 0%, 0%, 0.1);
+  cursor: pointer;
+  position: relative;
+}
+
+.beta {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: rgb(229, 9, 20);
+  border-radius: 2px;
+  color: white;
+  padding: 1px 3px;
+  font-size: 14px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}

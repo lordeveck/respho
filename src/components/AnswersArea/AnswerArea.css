@@ -1,13 +1,16 @@
 .answer-area {
-  width: 100%;
+  width: 90%;
+  /* flex-grow: 1; */
+  /* display: flex;
+  flex-direction: column;
+  margin-top: 16px; */
 }
 
 .answer {
   background-color: #393939;
-  margin-top: 16px;
+  margin-bottom: 8px;
   border-radius: 2px;
-  height: 36px;
-  width: 100%;
+  height: 32px;
   color: white;
   display: flex;
   justify-content: center;
@@ -18,13 +21,55 @@
 }
 
 .wrong {
-  background-color: #de585f;
+  --background: #de585f;
+  animation: flip 0.5s ease forwards;
+  animation-delay: 0.2s;
 }
 
 .pass {
-  background-color: rgb(211, 175, 56);
+  --background: rgb(211, 175, 56);
+  animation: flip 0.5s ease forwards;
+  animation-delay: 0.2s;
 }
 
 .success {
-  background-color: hsl(139deg 27% 49%);
+  --background: hsl(139deg 27% 49%);
+  animation: flip 0.5s ease forwards;
+  animation-delay: 0.2s;
+}
+
+/* animations */
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0);
+    background-color: #393939;
+  }
+  45% {
+    transform: rotateX(90deg);
+    background-color: #393939;
+  }
+  55% {
+    transform: rotateX(90deg);
+    background-color: var(--background);
+  }
+  100% {
+    transform: rotateX(0);
+    background-color: var(--background);
+  }
+}
+
+@media only screen and (max-device-width: 375px) {
+  .answer {
+    margin-bottom: 8px;
+    height: 20px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 376px) and (max-device-width: 420px) {
+  .answer {
+    margin-bottom: 8px;
+    height: 32px;
+  }
 }

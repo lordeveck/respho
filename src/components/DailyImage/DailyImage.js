@@ -1,41 +1,42 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { ImagePixelated } from 'react-pixelate';
+import { FadeLoader } from 'react-spinners';
 import './DailyImage.css';
 
 function DailyImage(props) {
-    const imgCanvas = useRef(null);
-    const [resolutions, setResolutions] = useState({ p: 5, q: 5, w: 235, h: 350 });
+    const resolutionSize = useMemo(() => {
+        return [30, 25, 15, 10, 5, 3, 1];
+    }, []);
+
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        setResolutions((currentResolutions) => {
-            const context = imgCanvas.current.getContext('2d');
+        if (!props.dailyImageSrc) return;
 
-            const daily_image = new Image();
-            daily_image.src = props.dailyImageSrc;
+        const daily_image = new Image();
 
-            daily_image.onload = () => {
-                const { p, q, w, h } = currentResolutions;
-                console.log(p, q, w, h);
-                imgCanvas.current.width = p;
-                imgCanvas.current.height = q;
+        daily_image.onload = () => {
+            setIsLoading(false);
+        };
 
-                context.drawImage(daily_image, 0, 0, p, q);
-
-                imgCanvas.current.style.width = w + "px";
-                imgCanvas.current.style.height = h + "px";
-            }
-
-            return {
-                ...currentResolutions,
-                p: currentResolutions.p * 1.5,
-                q: currentResolutions.q * 1.5,
-            };
-        });
+        daily_image.src = props.dailyImageSrc;
     }, [props.dailyImageSrc, props.answers]);
 
     return (
         <div className='daily-question'>
-            <canvas ref={imgCanvas} id="viewport" className='img-canvas'></canvas>
-            <p>{`Sıradaki çözünürlük -> ${Math.round(resolutions.q)} X ${Math.round(resolutions.p)}`}</p>
+            <FadeLoader color={"hsl(139deg 27% 49%)"} loading={isLoading}></FadeLoader>
+            {
+                !isLoading ?
+                    <div>
+                        <div className='resolution-marker'>
+                            <span>{`${resolutionSize[props.answers.length]} X ${resolutionSize[props.answers.length]}`}</span>
+                        </div>
+                        <ImagePixelated src={props.dailyImageSrc} width={170} height={250} pixelSize={resolutionSize[props.answers.length]} fillTransparencyColor={"grey"} />
+                        <br></br>
+                        {props.children}
+                    </div>
+                    : null
+            }
         </div>
     );
 }

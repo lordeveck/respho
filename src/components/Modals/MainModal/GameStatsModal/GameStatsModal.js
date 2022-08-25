@@ -1,7 +1,15 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import IsMobileContext from '../../../../context/IsMobile';
+import getGameStatsText from '../../../../helpers/getGameStatsText';
 import './GameStatsModal.css';
+import toastr from 'toastr';
+import { useNavigate } from 'react-router-dom';
 
 function GameStatsModal(props) {
+    const navigate = useNavigate();
+
+    const { isMobile } = useContext(IsMobileContext);
+
     const [remainingNewDay, setRemainingNewDay] = useState('');
 
     useEffect(() => {
@@ -17,6 +25,22 @@ function GameStatsModal(props) {
         }
     }, []);
 
+    const shareGameStats = () => {
+        const { gameStats, category } = props;
+
+        const text = getGameStatsText(gameStats, category);
+
+        if ((navigator.share) && isMobile) {
+            navigator.share({
+                title: 'Respho Sonuç',
+                text,
+            });
+        } else {
+            navigator.clipboard.writeText(text);
+            toastr.info('Kopyalandı.')
+        }
+    };
+
     const timer = () => {
         const date = new Date();
 
@@ -31,6 +55,10 @@ function GameStatsModal(props) {
         setRemainingNewDay(`${leftHour}:${leftMinute}:${leftSeconds}`);
     };
 
+    const goToHomePage = () => {
+        navigate('/respho');
+    };
+
     return (
         <div className="modal-content">
             <div className="modal-title">
@@ -40,34 +68,36 @@ function GameStatsModal(props) {
                 <hr></hr>
             </div>
             <div className="description">
-                <div style={{ width: "300px" }}>
-                    <div>
-                        <p>Doğru Cevap: {props.question.answers.join(" / ")}</p>
-                        <img src={props.question.img} width="235px" height="350px" alt={props.question.answers[0]}></img>
+                <div className='game-stats-description'>
+                    <div className='answer-img-div'>
+                        <img className="answer-img" src={props.question.img} alt={props.question.answers[0]}></img>
                     </div>
 
-                    <div>
-                        <p>Yönetmen: {props.question.director}</p>
+                    <div className='daily-question-answer'>
+                        <p>Cevap: {props.question.answers[0]}</p>
 
-                        <p>Oyuncular: {props.question.topCast.join(", ")}</p>
+                        {
+                            props.question.descriptions.map((desc, i) => {
+                                if (desc.isLink) {
+                                    return <p key={i}>{desc.name}:
+                                        <a className='link' href={desc.value} target='_blank' rel="noreferrer">&nbsp; {desc.brand}</a>
+                                    </p>
+                                }
 
-                        <p>Fragman:
-                            <a className='link' href={props.question.trailer}>YouTube</a>
-                        </p>
-
-                        <p>Resim Kaynağı:
-                            <a className='link' href={props.question.imgFrom}>IMDB</a>
-                        </p>
+                                return <p key={i}>{desc.name}: {desc.value}</p>
+                            })
+                        }
                     </div>
                 </div>
             </div>
             <div className="modal-footer">
                 <div className='timer'>
-                    <p>Sonraki Respho</p>
-                    <p style={{ fontSize: '24px', marginTop: '0px' }}>{remainingNewDay}</p>
+                    <span>Sonraki Respho</span>
+                    <span style={{ fontSize: '24px', marginTop: '0px' }}>{remainingNewDay}</span>
                 </div>
-                <div>
-                    <button id="share" className="game-button">Paylaş</button>
+                <div className='share-area'>
+                    <button id="share" className="game-button wide" onClick={shareGameStats}>PAYLAŞ</button>
+                    <button id="share" className="game-button wide" style={{ backgroundColor: '#393939' }} onClick={goToHomePage}>ANA SAYFA</button>
                 </div>
             </div >
         </div >
