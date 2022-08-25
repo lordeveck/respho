@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/respho/static/css/main.eee40ec5.css",
-    "main.js": "/respho/static/js/main.4ec6e030.js",
-    "static/js/27.946f8518.chunk.js": "/respho/static/js/27.946f8518.chunk.js",
-    "index.html": "/respho/index.html"
+    "main.css": "/static/css/main.a5660c25.css",
+    "main.js": "/static/js/main.6f645fe3.js",
+    "static/js/27.946f8518.chunk.js": "/static/js/27.946f8518.chunk.js",
+    "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.eee40ec5.css",
-    "static/js/main.4ec6e030.js"
+    "static/css/main.a5660c25.css",
+    "static/js/main.6f645fe3.js"
   ]
 }
