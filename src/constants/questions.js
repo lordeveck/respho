@@ -9,174 +9,6 @@ const questions = {
             topCast: ['John Travolta', 'Uma Thurman', 'Samuel L. Jackson', 'Bruce Willis'],
         },
         {
-            img: 'https://m.media-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNTNjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg',
-            answers: ['SE7EN', 'YEDI', 'SEVEN'],
-            descriptions: [
-                {
-                    name: 'Yönetmen',
-                    value: 'David Fincher',
-                    isLink: false,
-                },
-                {
-                    name: 'Oyuncular',
-                    value: 'Brad Pitt, Morgan Freeman, Gwyneth Paltrow, Kevin Spacey',
-                    isLink: false,
-                },
-                {
-                    name: 'Fragman',
-                    value: 'https://www.youtube.com/watch?v=znmZoVkCjpI',
-                    isLink: true,
-                    brand: 'YouTube'
-                },
-                {
-                    name: 'Resim Kaynağı',
-                    value: 'https://www.imdb.com/title/tt0114369',
-                    isLink: true,
-                    brand: 'IMDB',
-                },
-            ],
-        },
-        {
-            img: 'https://m.media-amazon.com/images/M/MV5BMjE0MTY2MDI3NV5BMl5BanBnXkFtZTcwNTc1MzEzMQ@@._V1_FMjpg_UX1000_.jpg',
-            answers: ['G.O.R.A', 'GORA'],
-            descriptions: [
-                {
-                    name: 'Yönetmen',
-                    value: 'Ömer Faruk Sorak',
-                    isLink: false,
-                },
-                {
-                    name: 'Oyuncular',
-                    value: 'Cem Yılmaz, Özge Özberk, Ozan Güven, Şafak Sezer',
-                    isLink: false,
-                },
-                {
-                    name: 'Fragman',
-                    value: 'https://www.youtube.com/watch?v=UTUiQ9NWZcM',
-                    isLink: true,
-                    brand: 'YouTube'
-                },
-                {
-                    name: 'Resim Kaynağı',
-                    value: 'https://www.imdb.com/title/tt0384116',
-                    isLink: true,
-                    brand: 'IMDB',
-                },
-            ],
-        },
-        {
-            img: 'https://m.media-amazon.com/images/M/MV5BMTUxMzQyNjA5MF5BMl5BanBnXkFtZTYwOTU2NTY3._V1_FMjpg_UX1000_.jpg',
-            answers: ['THE GREEN MILE', 'YEŞIL YOL', 'THE GREEN MILE', 'GREEN MILE'],
-            descriptions: [
-                {
-                    name: 'Yönetmen',
-                    value: 'Frank Darabont',
-                    isLink: false,
-                },
-                {
-                    name: 'Oyuncular',
-                    value: 'Tom Hanks, Michael Clarke Duncan, David Morse',
-                    isLink: false,
-                },
-                {
-                    name: 'Fragman',
-                    value: 'https://www.youtube.com/watch?v=Bg7epsq0OIQ',
-                    isLink: true,
-                    brand: 'YouTube'
-                },
-                {
-                    name: 'Resim Kaynağı',
-                    value: 'https://www.imdb.com/title/tt0120689',
-                    isLink: true,
-                    brand: 'IMDB',
-                },
-            ],
-        },
-        {
-            img: 'https://m.media-amazon.com/images/M/MV5BNzg4MjQxNTQtZmI5My00YjMwLWJlMjUtMmJlY2U2ZWFlNzY1XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1000_.jpg',
-            answers: ['STAR WARS', 'YILDIZ SAVAŞLARI'],
-            descriptions: [
-                {
-                    name: 'Yönetmen',
-                    value: 'George Lucas',
-                    isLink: false,
-                },
-                {
-                    name: 'Oyuncular',
-                    value: 'Mark Hamill, Harrison Ford, Carrie Fisher, Alec Guinness',
-                    isLink: false,
-                },
-                {
-                    name: 'Fragman',
-                    value: 'https://www.youtube.com/watch?v=vZ734NWnAHA',
-                    isLink: true,
-                    brand: 'YouTube'
-                },
-                {
-                    name: 'Resim Kaynağı',
-                    value: 'https://www.imdb.com/title/tt0076759',
-                    isLink: true,
-                    brand: 'IMDB',
-                },
-            ],
-        },
-        {
-            img: 'https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg',
-            answers: ['BACK TO THE FUTURE', 'GELECEĞE DÖNÜŞ'],
-            descriptions: [
-                {
-                    name: 'Yönetmen',
-                    value: 'Robert Zemeckis',
-                    isLink: false,
-                },
-                {
-                    name: 'Oyuncular',
-                    value: 'Michael J. Fox, Christopher Lloyd',
-                    isLink: false,
-                },
-                {
-                    name: 'Fragman',
-                    value: 'https://www.youtube.com/watch?v=qvsgGtivCgs',
-                    isLink: true,
-                    brand: 'YouTube'
-                },
-                {
-                    name: 'Resim Kaynağı',
-                    value: 'https://www.imdb.com/title/tt0088763',
-                    isLink: true,
-                    brand: 'IMDB',
-                },
-            ],
-        },
-        {
-            img: 'https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg',
-            answers: ['INTERSTELLAR', 'YILDIZLARARSI'],
-            descriptions: [
-                {
-                    name: 'Yönetmen',
-                    value: 'Christopher Nolan',
-                    isLink: false,
-                },
-                {
-                    name: 'Oyuncular',
-                    value: 'Matthew McConaughey, Anne Hathaway, Jessica Chastain, Mackenzie Foy',
-                    isLink: false,
-                },
-                {
-                    name: 'Fragman',
-                    value: 'https://www.youtube.com/watch?v=zSWdZVtXT7E',
-                    isLink: true,
-                    brand: 'YouTube'
-                },
-                {
-                    name: 'Resim Kaynağı',
-                    value: 'https://www.imdb.com/title/tt0816692',
-                    isLink: true,
-                    brand: 'IMDB',
-                },
-            ],
-        },
-        {
             img: 'https://m.media-amazon.com/images/M/MV5BMzkyZGFlOWQtZjFlMi00N2YwLWE2OWQtYTgxY2NkNmM1NjMwXkEyXkFqcGdeQXVyNjY1NTM1MzA@._V1_.jpg',
             answers: ["HARRY POTTER AND THE SORCERER'S STONE", "HARRY POTTER VE FELSEFE TAŞI"],
             descriptions: [
@@ -187,7 +19,7 @@ const questions = {
                 },
                 {
                     name: 'Oyuncular',
-                    value: 'Daniel Radcliffe, Rupert Grint, Emma Watson ',
+                    value: 'Daniel Radcliffe, Rupert Grint, Emma Watson',
                     isLink: false,
                 },
                 {
@@ -204,6 +36,174 @@ const questions = {
                 },
             ],
         },
+        {
+            img: 'https://m.media-amazon.com/images/M/MV5BZGQzMWY0NGYtMGE4MS00YmExLTkyOWItNzQxOWUzODkxNzAyXkEyXkFqcGdeQXVyNDQ2MTMzODA@._V1_FMjpg_UX1000_.jpg',
+            answers: ["ÖLÜMLÜ DÜNYA", "MORTAL WORLD"],
+            descriptions: [
+                {
+                    name: 'Yönetmen',
+                    value: 'Ali Atay',
+                    isLink: false,
+                },
+                {
+                    name: 'Oyuncular',
+                    value: 'Ahmet Mümtaz Taylan, Sarp Apak, Irem Sak, Feyyaz Yiğit',
+                    isLink: false,
+                },
+                {
+                    name: 'Fragman',
+                    value: 'https://www.youtube.com/watch?v=jHlLVxkG-XY',
+                    isLink: true,
+                    brand: 'YouTube'
+                },
+                {
+                    name: 'Resim Kaynağı',
+                    value: 'https://www.imdb.com/title/tt7748244',
+                    isLink: true,
+                    brand: 'IMDB',
+                },
+            ],
+        },
+        {
+            img: 'https://m.media-amazon.com/images/M/MV5BMTY3MjM1Mzc4N15BMl5BanBnXkFtZTgwODM0NzAxMDE@._V1_.jpg',
+            answers: ["A CLOCKWORK ORANGE", "CLOCKWORK ORANGE", "OTOMATIK PORTAKAL"],
+            descriptions: [
+                {
+                    name: 'Yönetmen',
+                    value: 'Stanley Kubrick',
+                    isLink: false,
+                },
+                {
+                    name: 'Oyuncular',
+                    value: 'Malcolm McDowell, Patrick Magee, Michael Bates',
+                    isLink: false,
+                },
+                {
+                    name: 'Fragman',
+                    value: 'https://www.youtube.com/watch?v=T54uZPI4Z8A',
+                    isLink: true,
+                    brand: 'YouTube'
+                },
+                {
+                    name: 'Resim Kaynağı',
+                    value: 'https://www.imdb.com/title/tt0066921',
+                    isLink: true,
+                    brand: 'IMDB',
+                },
+            ],
+        },
+        {
+            img: 'https://m.media-amazon.com/images/M/MV5BZDg0YzNmODEtYTk1Ny00Y2Y0LWJiZDItMzFhMTFjYTQyM2FlXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_.jpg',
+            answers: ["TOSUN PAŞA", "TOSUN PASA"],
+            descriptions: [
+                {
+                    name: 'Yönetmen',
+                    value: 'Kartal Tibet',
+                    isLink: false,
+                },
+                {
+                    name: 'Oyuncular',
+                    value: 'Kemal Sunal, Müjde Ar, Adile Naşit, Şener Şen',
+                    isLink: false,
+                },
+                {
+                    name: 'Fragman',
+                    value: 'https://www.youtube.com/watch?v=OxSz6qzM2G4',
+                    isLink: true,
+                    brand: 'YouTube'
+                },
+                {
+                    name: 'Resim Kaynağı',
+                    value: 'https://www.imdb.com/title/tt0253828',
+                    isLink: true,
+                    brand: 'IMDB',
+                },
+            ],
+        },
+        {
+            img: 'https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_FMjpg_UX1000_.jpg',
+            answers: ["JAWS", "DENIZIN DIŞLERI"],
+            descriptions: [
+                {
+                    name: 'Yönetmen',
+                    value: 'Steven Spielberg',
+                    isLink: false,
+                },
+                {
+                    name: 'Oyuncular',
+                    value: 'Roy Scheider, Robert Shaw, Richard Dreyfuss, Lorraine Gary',
+                    isLink: false,
+                },
+                {
+                    name: 'Fragman',
+                    value: 'https://www.youtube.com/watch?v=U1fu_sA7XhE',
+                    isLink: true,
+                    brand: 'YouTube'
+                },
+                {
+                    name: 'Resim Kaynağı',
+                    value: 'https://www.imdb.com/title/tt0073195',
+                    isLink: true,
+                    brand: 'IMDB',
+                },
+            ],
+        },
+        {
+            img: 'https://m.media-amazon.com/images/M/MV5BZDA0OGQxNTItMDZkMC00N2UyLTg3MzMtYTJmNjg3Nzk5MzRiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg',
+            answers: ["AVATAR"],
+            descriptions: [
+                {
+                    name: 'Yönetmen',
+                    value: 'James Cameron',
+                    isLink: false,
+                },
+                {
+                    name: 'Oyuncular',
+                    value: 'Sam Worthington, Zoe Saldana, Sigourney Weaver',
+                    isLink: false,
+                },
+                {
+                    name: 'Fragman',
+                    value: 'https://www.youtube.com/watch?v=7HHPYrFApKs',
+                    isLink: true,
+                    brand: 'YouTube'
+                },
+                {
+                    name: 'Resim Kaynağı',
+                    value: 'https://www.imdb.com/title/tt0499549',
+                    isLink: true,
+                    brand: 'IMDB',
+                },
+            ],
+        },
+        {
+            img: 'https://m.media-amazon.com/images/M/MV5BYzE5MjY1ZDgtMTkyNC00MTMyLThhMjAtZGI5OTE1NzFlZGJjXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg',
+            answers: ["DEADPOOL", "DEADPOOL 1", "DEADPOOL1"],
+            descriptions: [
+                {
+                    name: 'Yönetmen',
+                    value: 'Tim Miller',
+                    isLink: false,
+                },
+                {
+                    name: 'Oyuncular',
+                    value: 'Ryan Reynolds, Morena Baccarin, T.J. Miller',
+                    isLink: false,
+                },
+                {
+                    name: 'Fragman',
+                    value: 'https://www.youtube.com/watch?v=ONHBaC-pfsk',
+                    isLink: true,
+                    brand: 'YouTube'
+                },
+                {
+                    name: 'Resim Kaynağı',
+                    value: 'https://www.imdb.com/title/tt1431045',
+                    isLink: true,
+                    brand: 'IMDB',
+                },
+            ],
+        },
     ],
     music: [
         {
@@ -213,174 +213,6 @@ const questions = {
             answers: ['PULP FICTION', 'UCUZ ROMAN'],
             director: 'Quentin Tarantino',
             topCast: ['John Travolta', 'Uma Thurman', 'Samuel L. Jackson', 'Bruce Willis'],
-        },
-        {
-            img: 'https://i.scdn.co/image/ab67616d0000b2737c05e69390ab7c628a83cee7',
-            answers: ['METALLICA'],
-            descriptions: [
-                {
-                    name: 'Albüm',
-                    value: '...And Justice For All',
-                    isLink: false,
-                },
-                {
-                    name: 'Grup Üyeleri',
-                    value: 'James Hetfield, Kirk Hammet, Lars Ulrich, Robert Trujillo',
-                    isLink: false,
-                },
-                {
-                    name: 'Albüm Linki',
-                    value: 'https://open.spotify.com/album/6Eycw3dwcDMEFSqkUvLQ7g',
-                    isLink: true,
-                    brand: 'Spotify'
-                },
-                {
-                    name: 'Şarkı Önerisi',
-                    value: 'https://open.spotify.com/track/6jv5Og00Okb2IMEHuzNTkV?si=9856ed2d38cf42b9',
-                    isLink: true,
-                    brand: 'Spotify'
-                },
-            ],
-        },
-        {
-            img: 'https://i.scdn.co/image/ab67616d0000b273e70bc4d7d71d4bfacb08a088',
-            answers: ['BARIŞ MANÇO'],
-            descriptions: [
-                {
-                    name: 'Albüm',
-                    value: 'Mançoloji',
-                    isLink: false,
-                },
-                {
-                    name: 'Tarz',
-                    value: 'Anadolu Rock',
-                    isLink: false,
-                },
-                {
-                    name: 'Albüm Linki',
-                    value: 'https://open.spotify.com/album/3RHbYmN366gxJKYr1n11Yn',
-                    isLink: true,
-                    brand: 'Spotify'
-                },
-                {
-                    name: 'Şarkı Önerisi',
-                    value: 'https://open.spotify.com/track/3rl9FGvJfdfbaVfHCF7oM2?si=938f508488db48cd',
-                    isLink: true,
-                    brand: 'Spotify'
-                },
-            ],
-        },
-        {
-            img: 'https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36',
-            answers: ['THE WEEKND', 'WEEKND'],
-            descriptions: [
-                {
-                    name: 'Albüm',
-                    value: 'After Hours',
-                    isLink: false,
-                },
-                {
-                    name: 'Tarz',
-                    value: 'Pop',
-                    isLink: false,
-                },
-                {
-                    name: 'Albüm Linki',
-                    value: 'https://open.spotify.com/album/4yP0hdKOZPNshxUOjY0cZj',
-                    isLink: true,
-                    brand: 'Spotify'
-                },
-                {
-                    name: 'Şarkı Önerisi',
-                    value: 'https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b?si=fd4c0fbf5f9b4fe4',
-                    isLink: true,
-                    brand: 'Spotify'
-                },
-            ],
-        },
-        {
-            img: 'https://i.scdn.co/image/ab67616d0000b273ecd10eea07796a0edf4fb609',
-            answers: ['EZHEL', 'EZEL', 'AIS EZHEL'],
-            descriptions: [
-                {
-                    name: 'Albüm',
-                    value: 'Müptezhel',
-                    isLink: false,
-                },
-                {
-                    name: 'Tarz',
-                    value: 'Rap',
-                    isLink: false,
-                },
-                {
-                    name: 'Albüm Linki',
-                    value: 'https://open.spotify.com/album/5mo701EsMb8GFdF4YL3NG8',
-                    isLink: true,
-                    brand: 'Spotify'
-                },
-                {
-                    name: 'Şarkı Önerisi',
-                    value: 'https://open.spotify.com/track/0R0o8uOkDz40XsR6uwThfQ?si=1705f02946b441f5',
-                    isLink: true,
-                    brand: 'Spotify'
-                },
-            ],
-        },
-        {
-            img: 'https://i.scdn.co/image/ab67616d0000b2735675e83f707f1d7271e5cf8a',
-            answers: ['IMAGINE DRAGONS'],
-            descriptions: [
-                {
-                    name: 'Albüm',
-                    value: 'Evolve',
-                    isLink: false,
-                },
-                {
-                    name: 'Tarz',
-                    value: 'Pop Rock - Elektronik',
-                    isLink: false,
-                },
-                {
-                    name: 'Albüm Linki',
-                    value: 'https://open.spotify.com/album/33pt9HBdGlAbRGBHQgsZsU',
-                    isLink: true,
-                    brand: 'Spotify'
-                },
-                {
-                    name: 'Şarkı Önerisi',
-                    value: 'https://open.spotify.com/track/1zB4vmk8tFRmM9UULNzbLB?si=59edfe7e2cb04704',
-                    isLink: true,
-                    brand: 'Spotify'
-                },
-            ],
-        },
-        {
-            img: 'https://i.scdn.co/image/ab67616d0000b2736ec24cd9406bdeee20a36a4f',
-            answers: ['SERDAR ORTAÇ'],
-            descriptions: [
-                {
-                    name: 'Albüm',
-                    value: 'Mesafe',
-                    isLink: false,
-                },
-                {
-                    name: 'Tarz',
-                    value: 'Pop',
-                    isLink: false,
-                },
-                {
-                    name: 'Albüm Linki',
-                    value: 'https://open.spotify.com/album/0wJbxaUr4FeCXU0gi4kcVa',
-                    isLink: true,
-                    brand: 'Spotify'
-                },
-                {
-                    name: 'Şarkı Önerisi',
-                    value: 'https://open.spotify.com/track/7IExKuaQ33gtHIOYQz6zb6?si=a50a061a9eed430f',
-                    isLink: true,
-                    brand: 'Spotify'
-                },
-            ],
         },
         {
             img: 'https://i.scdn.co/image/ab67616d0000b2731d97ca7376f835055f828139',
@@ -409,6 +241,174 @@ const questions = {
                     brand: 'Spotify'
                 },
             ],
+        },
+        {
+            img: 'https://i.scdn.co/image/ab67616d0000b2737795a558f68bf11b1077ab8b',
+            answers: ['MÜSLÜM GÜRSES', "MUSLUM GURSES"],
+            descriptions: [
+                {
+                    name: 'Albüm',
+                    value: 'Küskünüm',
+                    isLink: false,
+                },
+                {
+                    name: 'Tarz',
+                    value: 'Arabesk',
+                    isLink: false,
+                },
+                {
+                    name: 'Albüm Linki',
+                    value: 'https://open.spotify.com/album/1BsLgh8u0QAyn1GIlvHmGO',
+                    isLink: true,
+                    brand: 'Spotify'
+                },
+                {
+                    name: 'Şarkı Önerisi',
+                    value: 'https://open.spotify.com/track/0aTxurHLM42uBcAxjsZLES?si=0b7fcd944aa945f5',
+                    isLink: true,
+                    brand: 'Spotify'
+                },
+            ],
+        },
+        {
+            img: 'https://i.scdn.co/image/ab67616d0000b2735e9767ffdb710d4d134990d4',
+            answers: ['TARKAN'],
+            descriptions: [
+                {
+                    name: 'Albüm',
+                    value: 'Dudu',
+                    isLink: false,
+                },
+                {
+                    name: 'Tarz',
+                    value: 'Pop',
+                    isLink: false,
+                },
+                {
+                    name: 'Albüm Linki',
+                    value: 'https://open.spotify.com/album/7iAF2p1sEHQ6ixJHRdiTXn',
+                    isLink: true,
+                    brand: 'Spotify'
+                },
+                {
+                    name: 'Şarkı Önerisi',
+                    value: 'https://open.spotify.com/track/15xj7p5uDk9sDnNbQtgZ8Y?si=e62eb36335e14576',
+                    isLink: true,
+                    brand: 'Spotify'
+                },
+            ],
+        },
+        {
+            img: 'https://i.scdn.co/image/ab67616d0000b273ea7caaff71dea1051d49b2fe',
+            answers: ['PINK FLOYD'],
+            descriptions: [
+                {
+                    name: 'Albüm',
+                    value: 'Dark Side of the Moon',
+                    isLink: false,
+                },
+                {
+                    name: 'Tarz',
+                    value: 'Progresif Rock- Saykodelik',
+                    isLink: false,
+                },
+                {
+                    name: 'Albüm Linki',
+                    value: 'https://open.spotify.com/album/4LH4d3cOWNNsVw41Gqt2kv',
+                    isLink: true,
+                    brand: 'Spotify'
+                },
+                {
+                    name: 'Şarkı Önerisi',
+                    value: 'https://open.spotify.com/track/4xHWH1jwV5j4mBYRhxPbwZ?si=49eb55f301314e4e',
+                    isLink: true,
+                    brand: 'Spotify'
+                },
+            ],
+        },
+        {
+            img: 'https://i.scdn.co/image/ab67616d0000b273de437d960dda1ac0a3586d97',
+            answers: ['MICHAEL JACKSON'],
+            descriptions: [
+                {
+                    name: 'Albüm',
+                    value: 'Thriller',
+                    isLink: false,
+                },
+                {
+                    name: 'Tarz',
+                    value: 'Pop',
+                    isLink: false,
+                },
+                {
+                    name: 'Albüm Linki',
+                    value: 'https://open.spotify.com/album/2ANVost0y2y52ema1E9xAZ',
+                    isLink: true,
+                    brand: 'Spotify'
+                },
+                {
+                    name: 'Şarkı Önerisi',
+                    value: 'https://open.spotify.com/track/5ChkMS8OtdzJeqyybCc9R5?si=6ca2add1fc8d44a6',
+                    isLink: true,
+                    brand: 'Spotify'
+                },
+            ],
+        },
+        {
+            img: 'https://i.scdn.co/image/ab67616d0000b273b6b4fa5df889449450f74860',
+            answers: ['EDIS'],
+            descriptions: [
+                {
+                    name: 'Albüm',
+                    value: 'An',
+                    isLink: false,
+                },
+                {
+                    name: 'Tarz',
+                    value: 'Pop',
+                    isLink: false,
+                },
+                {
+                    name: 'Albüm Linki',
+                    value: 'https://open.spotify.com/album/4mDY6XHkagFeJIFwMJ7Lgz',
+                    isLink: true,
+                    brand: 'Spotify'
+                },
+                {
+                    name: 'Şarkı Önerisi',
+                    value: 'https://open.spotify.com/track/4YNFjooq5vbXPVhrLJR5Px?si=e8deff6a1fef4999',
+                    isLink: true,
+                    brand: 'Spotify'
+                },
+            ],
+        },
+        {
+            img: 'https://i.scdn.co/image/ab67616d0000b273465be6cda98a1a6950a12964',
+            answers: ['50 CENT', '50CENT', 'FIFTY CENT'],
+            descriptions: [
+                {
+                    name: 'Albüm',
+                    value: "Get Rich or Die Tryin'",
+                    isLink: false,
+                },
+                {
+                    name: 'Tarz',
+                    value: 'Gangsta Rap, Hip Hop',
+                    isLink: false,
+                },
+                {
+                    name: 'Albüm Linki',
+                    value: 'https://open.spotify.com/album/4ycNE7y1rp5215g1kkqk1P',
+                    isLink: true,
+                    brand: 'Spotify'
+                },
+                {
+                    name: 'Şarkı Önerisi',
+                    value: 'https://open.spotify.com/track/3G0yz3DZn3lfraledmBCT0?si=74bb157ee3ab49d3',
+                    isLink: true,
+                    brand: 'Spotify'
+                },
+            ],
         }
     ],
     game: [
@@ -419,174 +419,6 @@ const questions = {
             answers: ['PULP FICTION', 'UCUZ ROMAN'],
             director: 'Quentin Tarantino',
             topCast: ['John Travolta', 'Uma Thurman', 'Samuel L. Jackson', 'Bruce Willis'],
-        },
-        {
-            img: 'https://upload.wikimedia.org/wikipedia/tr/b/be/Grand_Theft_Auto_V_oyununun_kapa%C4%9F%C4%B1.jpg',
-            answers: ['GTA V', 'GTA 5', 'GTAV', 'GTA5', 'GRAND THEFT AUTO V', 'GRAND THEFT AUTO 5'],
-            descriptions: [
-                {
-                    name: 'Yapımcı',
-                    value: 'Rockstar Games',
-                    isLink: false,
-                },
-                {
-                    name: 'Yönetmen',
-                    value: 'Leslie Benzies, Imran Sarwar',
-                    isLink: false,
-                },
-                {
-                    name: 'Fragman',
-                    value: 'https://www.youtube.com/watch?v=QkkoHAzjnUs',
-                    isLink: true,
-                    brand: 'YouTube'
-                },
-                {
-                    name: 'Fiyat',
-                    value: 'https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/',
-                    isLink: true,
-                    brand: 'Steam'
-                }
-            ],
-        },
-        {
-            img: 'https://upload.wikimedia.org/wikipedia/tr/5/53/TheWitcher3-WildHunt.KapakResmi.png',
-            answers: ['WITCHER 3', 'WITCHER3', 'WITCHERIII', 'WITHCER III'],
-            descriptions: [
-                {
-                    name: 'Yapımcı',
-                    value: 'CD Projekt RED',
-                    isLink: false,
-                },
-                {
-                    name: 'Yönetmenler',
-                    value: 'Artem Sharipov, Konrad Tomaszkiewicz, Mateusz Kanik, Sebastian Stępień',
-                    isLink: false,
-                },
-                {
-                    name: 'Fragman',
-                    value: 'https://www.youtube.com/watch?v=c0i88t0Kacs',
-                    isLink: true,
-                    brand: 'YouTube'
-                },
-                {
-                    name: 'Fiyat',
-                    value: 'https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/',
-                    isLink: true,
-                    brand: 'Steam'
-                }
-            ],
-        },
-        {
-            img: 'https://www.donanimhaber.com/images/images/haber/137337/1400x1400pubg-nin-yeni-adi-pubg-battlegrounds-oldu.jpg',
-            answers: ['PUBG: BATTLEGROUNDS', 'PUBG', 'BABICI'],
-            descriptions: [
-                {
-                    name: 'Yapımcı',
-                    value: 'Krafton Game Union',
-                    isLink: false,
-                },
-                {
-                    name: 'Yönetmen',
-                    value: 'Brendan Greene',
-                    isLink: false,
-                },
-                {
-                    name: 'Fragman',
-                    value: 'https://www.youtube.com/watch?v=fDLAFIhfFy4',
-                    isLink: true,
-                    brand: 'YouTube'
-                },
-                {
-                    name: 'Fiyat',
-                    value: 'https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/',
-                    isLink: true,
-                    brand: 'Steam'
-                }
-            ],
-        },
-        {
-            img: 'https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Subnautica_cover_art.png/220px-Subnautica_cover_art.png',
-            answers: ['SUBNAUTICA'],
-            descriptions: [
-                {
-                    name: 'Yapımcı',
-                    value: 'Unknown Worlds Entertainment',
-                    isLink: false,
-                },
-                {
-                    name: 'Yönetmen',
-                    value: 'Charlie Clevelan',
-                    isLink: false,
-                },
-                {
-                    name: 'Fragman',
-                    value: 'https://www.youtube.com/watch?v=Rz2SNm8VguE',
-                    isLink: true,
-                    brand: 'YouTube'
-                },
-                {
-                    name: 'Fiyat',
-                    value: 'https://store.steampowered.com/app/264710/Subnautica/',
-                    isLink: true,
-                    brand: 'Steam'
-                }
-            ],
-        },
-        {
-            img: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/Assassin%27s_Creed_Valhalla_cover.jpg/220px-Assassin%27s_Creed_Valhalla_cover.jpg',
-            answers: ["ASSASSIN'S CREED VALHALLA", "ASSASSINS CREED VALHALLA", "VALHALLA"],
-            descriptions: [
-                {
-                    name: 'Yapımcı',
-                    value: 'Ubisoft',
-                    isLink: false,
-                },
-                {
-                    name: 'Yönetmenler',
-                    value: 'Ashraf Ismail, Eric Baptizat',
-                    isLink: false,
-                },
-                {
-                    name: 'Fragman',
-                    value: 'https://www.youtube.com/watch?v=gwMy_fsNkZ0',
-                    isLink: true,
-                    brand: 'YouTube'
-                },
-                {
-                    name: 'Fiyat',
-                    value: 'https://store.epicgames.com/tr/p/assassins-creed-valhalla',
-                    isLink: true,
-                    brand: 'Epic Games'
-                }
-            ],
-        },
-        {
-            img: 'https://upload.wikimedia.org/wikipedia/tr/thumb/2/2b/Cyberpunk_2077_kutu_foto.jpg/240px-Cyberpunk_2077_kutu_foto.jpg',
-            answers: ["CYBERPUNK 2077", "CYBERPUNK"],
-            descriptions: [
-                {
-                    name: 'Yapımcı',
-                    value: 'CD Projekt Red',
-                    isLink: false,
-                },
-                {
-                    name: 'Yönetmen',
-                    value: 'Adam Badowski',
-                    isLink: false,
-                },
-                {
-                    name: 'Fragman',
-                    value: 'https://www.youtube.com/watch?v=8X2kIfS6fb8',
-                    isLink: true,
-                    brand: 'YouTube'
-                },
-                {
-                    name: 'Fiyat',
-                    value: 'https://store.steampowered.com/app/1091500/Cyberpunk_2077/',
-                    isLink: true,
-                    brand: 'Steam'
-                }
-            ],
         },
         {
             img: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/God_of_War_4_cover.jpg/220px-God_of_War_4_cover.jpg',
@@ -615,6 +447,178 @@ const questions = {
                     brand: 'Steam'
                 }
             ],
+        },
+        {
+            img: 'https://upload.wikimedia.org/wikipedia/tr/2/22/Death_Stranding.jpg',
+            answers: ["DEATH STRANDING"],
+            descriptions: [
+                {
+                    name: 'Yapımcı',
+                    value: 'Sony Interactive Entertainment',
+                    isLink: false,
+                },
+                {
+                    name: 'Yönetmen',
+                    value: 'Hideo Kojima',
+                    isLink: false,
+                },
+                {
+                    name: 'Fragman',
+                    value: 'https://www.youtube.com/watch?v=tCI396HyhbQ',
+                    isLink: true,
+                    brand: 'YouTube'
+                },
+                {
+                    name: 'Fiyat',
+                    value: 'https://store.steampowered.com/app/1190460/DEATH_STRANDING/',
+                    isLink: true,
+                    brand: 'Steam'
+                }
+            ],
+        },
+        {
+            img: 'https://upload.wikimedia.org/wikipedia/en/9/9f/Portal_standalonebox.jpg',
+            answers: ["PORTAL", "PORTAL 1"],
+            descriptions: [
+                {
+                    name: 'Yapımcı',
+                    value: 'Valve',
+                    isLink: false,
+                },
+                {
+                    name: 'Dizaynır',
+                    value: 'Kim Swift',
+                    isLink: false,
+                },
+                {
+                    name: 'Fragman',
+                    value: 'https://www.youtube.com/watch?v=zQhCTRHYBZQ',
+                    isLink: true,
+                    brand: 'YouTube'
+                },
+                {
+                    name: 'Fiyat',
+                    value: 'https://store.steampowered.com/app/400/Portal/',
+                    isLink: true,
+                    brand: 'Steam'
+                }
+            ],
+        },
+        {
+            img: 'https://upload.wikimedia.org/wikipedia/en/4/46/Pro_Evolution_Soccer_2013_cover.jpg',
+            answers: [
+                "PRO EVOLUTION SOCCER 2013", "PRO EVOLUTION SOCCER 13",
+                "PRO EVOLUTION SOCCER13", "PRO EVOLUTION SOCCER2013",
+                "PES 13", "PES13"
+            ],
+            descriptions: [
+                {
+                    name: 'Yapımcı',
+                    value: 'Konami',
+                    isLink: false,
+                },
+                {
+                    name: 'Dizaynır',
+                    value: 'Konami',
+                    isLink: false,
+                },
+                {
+                    name: 'Fragman',
+                    value: 'https://www.youtube.com/watch?v=wHAJdgUS1w4',
+                    isLink: true,
+                    brand: 'YouTube'
+                },
+            ],
+        },
+        {
+            img: 'https://upload.wikimedia.org/wikipedia/tr/4/44/Red_Dead_Redemption_II.jpg',
+            answers: [
+                "RED DEAD REDEMPTION 2", "RED DEAD REDEMPTION II",
+                "RED DEAD REDEMPTION2", "RED DEAD REDEMPTIONII",
+                "RDR 2", "RDR2", "RDRII", "RDR II"
+            ],
+            descriptions: [
+                {
+                    name: 'Yapımcı',
+                    value: 'Rockstar Studios',
+                    isLink: false,
+                },
+                {
+                    name: 'Senaristler',
+                    value: 'Dan Houser, Michael Unsworth, Rupert Humphries',
+                    isLink: false,
+                },
+                {
+                    name: 'Fragman',
+                    value: 'https://www.youtube.com/watch?v=eaW0tYpxyp0',
+                    isLink: true,
+                    brand: 'YouTube'
+                },
+                {
+                    name: 'Fiyat',
+                    value: 'https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/',
+                    isLink: true,
+                    brand: 'Steam'
+                }
+            ],
+        },
+        {
+            img: 'https://upload.wikimedia.org/wikipedia/en/8/87/Forza_Horizon_4_cover.jpg',
+            answers: [
+                "FORZA HORIZON 4", "FORZA HORIZON4"
+            ],
+            descriptions: [
+                {
+                    name: 'Yapımcı',
+                    value: 'Playground Games',
+                    isLink: false,
+                },
+                {
+                    name: 'Yönetmen',
+                    value: 'Ralph Fulton',
+                    isLink: false,
+                },
+                {
+                    name: 'Fragman',
+                    value: 'https://www.youtube.com/watch?v=5xy4n73WOMM',
+                    isLink: true,
+                    brand: 'YouTube'
+                },
+                {
+                    name: 'Fiyat',
+                    value: 'https://store.steampowered.com/app/1293830/Forza_Horizon_4/',
+                    isLink: true,
+                    brand: 'Steam'
+                }
+            ],
+        },
+        {
+            img: 'https://upload.wikimedia.org/wikipedia/tr/7/7c/Doom_Eternal_kapak.png',
+            answers: ["DOOM ETERNAL"],
+            descriptions: [
+                {
+                    name: 'Yapımcı',
+                    value: 'Bethesda Softworks',
+                    isLink: false,
+                },
+                {
+                    name: 'Yönetmen',
+                    value: 'Hugo Martin',
+                    isLink: false,
+                },
+                {
+                    name: 'Fragman',
+                    value: 'https://www.youtube.com/watch?v=6eMhs6VFG0o',
+                    isLink: true,
+                    brand: 'YouTube'
+                },
+                {
+                    name: 'Fiyat',
+                    value: 'https://store.steampowered.com/app/782330/DOOM_Eternal/',
+                    isLink: true,
+                    brand: 'Steam'
+                }
+            ],
         }
     ],
     sport: [
@@ -625,103 +629,6 @@ const questions = {
             answers: ['PULP FICTION', 'UCUZ ROMAN'],
             director: 'Quentin Tarantino',
             topCast: ['John Travolta', 'Uma Thurman', 'Samuel L. Jackson', 'Bruce Willis'],
-        },
-        {
-            img: 'https://upload.wikimedia.org/wikipedia/commons/4/40/Alexsandro_de_Souza.jpg',
-            answers: ['ALEXSANDRO DE SOUZA', 'ALEX DE SOUZA', 'ALEX'],
-            descriptions: [
-                {
-                    name: 'Uyruk',
-                    value: 'Brezilya',
-                    isLink: false,
-                },
-                {
-                    name: 'Oynadığı Bazı Takımlar',
-                    value: 'Cortiba, Fenerbahçe, Palmeiras, Flamengo',
-                    isLink: false,
-                },
-            ],
-        },
-        {
-            img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/LeBron_James_-_51959723161_%28cropped%29.jpg/220px-LeBron_James_-_51959723161_%28cropped%29.jpg',
-            answers: ['LEBRON JAMES', 'LEBRON', 'KING JAMES'],
-            descriptions: [
-                {
-                    name: 'Uyruk',
-                    value: 'Amerika',
-                    isLink: false,
-                },
-                {
-                    name: 'Oynadığı Bazı Takımlar',
-                    value: 'Cleveland Cavaliers, Miami Heat, Los Angeles Lakers',
-                    isLink: false,
-                },
-            ],
-        },
-        {
-            img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Ronaldinho_11feb2007.jpg/170px-Ronaldinho_11feb2007.jpg',
-            answers: ['RONALDO DE ASSIS MOREIRA', 'RONALDINHO', 'RONALDINHO GAUCHO'],
-            descriptions: [
-                {
-                    name: 'Uyruk',
-                    value: 'Brezilya',
-                    isLink: false,
-                },
-                {
-                    name: 'Oynadığı Bazı Takımlar',
-                    value: 'Gremio, PSG, Barcelona, Milan',
-                    isLink: false,
-                },
-            ],
-        },
-        {
-            img: 'https://upload.wikimedia.org/wikipedia/commons/1/18/Lewis_Hamilton_2016_Malaysia_2.jpg',
-            answers: ['LEWIS CARL DAVIDSON HAMILTON', 'LEWIS HAMILTON', 'HAMILTON'],
-            descriptions: [
-                {
-                    name: 'Uyruk',
-                    value: 'Birleşik Krallık',
-                    isLink: false,
-                },
-                {
-                    name: 'Takım',
-                    value: 'Mercedes-AMG Petronas',
-                    isLink: false,
-                },
-            ],
-        },
-        {
-            img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Usain_Bolt_Olympics_Celebration.jpg/220px-Usain_Bolt_Olympics_Celebration.jpg',
-            answers: ['USAIN ST. LEO BOLT', 'USAIN BOLT', 'USAIN LEO BOLT'],
-            descriptions: [
-                {
-                    name: 'Uyruk',
-                    value: 'Jamaika',
-                    isLink: false,
-                },
-                {
-                    name: 'Önemli An',
-                    value: 'https://www.youtube.com/watch?v=x9M3a88-b7c',
-                    isLink: true,
-                    brand: 'YouTube'
-                },
-            ],
-        },
-        {
-            img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Kevin_De_Bruyne_201807091.jpg/220px-Kevin_De_Bruyne_201807091.jpg',
-            answers: ['KEVIN DE BRUYNE', 'DE BRUYNE', 'DEBRUYNE'],
-            descriptions: [
-                {
-                    name: 'Uyruk',
-                    value: 'Belçika',
-                    isLink: false,
-                },
-                {
-                    name: 'Oynadığı Bazı Takımlar',
-                    value: 'Genk, Chelsea, Wolfsburg, Manchester City',
-                    isLink: false,
-                },
-            ],
         },
         {
             img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Didier_Drogba_2013_%281%29.JPG/250px-Didier_Drogba_2013_%281%29.JPG',
@@ -735,6 +642,107 @@ const questions = {
                 {
                     name: 'Oynadığı Bazı Takımlar',
                     value: 'Le Mans, Marsilya, Chelsea, Galatasaray',
+                    isLink: false,
+                },
+            ],
+        },
+        {
+            img: 'https://upload.wikimedia.org/wikipedia/commons/4/40/R_federer.jpg',
+            answers: ['ROGER FEDERER', 'FEDERER'],
+            descriptions: [
+                {
+                    name: 'Uyruk',
+                    value: 'İsviçre',
+                    isLink: false,
+                },
+                {
+                    name: 'Doğum Tarihi',
+                    value: '8 Ağustos 1981 (41 yaşında)',
+                    isLink: false,
+                },
+            ],
+        },
+        {
+            img: 'https://upload.wikimedia.org/wikipedia/commons/a/ae/Michael_Jordan_in_2014.jpg',
+            answers: ['MICHAEL JORDAN', 'JORDAN'],
+            descriptions: [
+                {
+                    name: 'Uyruk',
+                    value: 'Amerika',
+                    isLink: false,
+                },
+                {
+                    name: 'Oynadığı Takımlar',
+                    value: 'Washington Wizards, Chicago Bulls',
+                    isLink: false,
+                },
+            ],
+        },
+        {
+            img: 'https://upload.wikimedia.org/wikipedia/commons/e/ec/AUT_vs._TUR_2016-03-29_%28267%29.jpg',
+            answers: ['CENK TOSUN', "TOSUN PASA", "TOSUN PAŞA"],
+            descriptions: [
+                {
+                    name: 'Uyruk',
+                    value: 'Türkiye',
+                    isLink: false,
+                },
+                {
+                    name: 'Oynadığı Bazı Takımlar',
+                    value: 'Eintracht Frankfurt, Gaziantepspor, Beşiktaş, Everton',
+                    isLink: false,
+                },
+            ],
+        },
+        {
+            img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Ali_the_greatest_1976.jpg/220px-Ali_the_greatest_1976.jpg',
+            answers: ['MUHAMMED ALI', "THE GREATEST", 'MOHAMMED ALI'],
+            descriptions: [
+                {
+                    name: 'Uyruk',
+                    value: 'Amerika',
+                    isLink: false,
+                },
+                {
+                    name: 'Doğum Tarihi',
+                    value: '17 Ocak 1942',
+                    isLink: false,
+                },
+                {
+                    name: 'Ölüm Tarihi',
+                    value: '3 Haziran 2016 (74 yaşında)',
+                    isLink: false,
+                },
+            ],
+        },
+        {
+            img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Verhoeven_Open_2016-Semih_Sayg%C4%B1ner.jpg/640px-Verhoeven_Open_2016-Semih_Sayg%C4%B1ner.jpg',
+            answers: ['SEMIH SAYGINER',],
+            descriptions: [
+                {
+                    name: 'Uyruk',
+                    value: 'Türkiye',
+                    isLink: false,
+                },
+                {
+                    name: 'Doğum Tarihi',
+                    value: '12 Kasım 1964 (54 yaşında)',
+                    isLink: false,
+                },
+            ],
+        },
+        {
+            img: 'https://upload.wikimedia.org/wikipedia/commons/1/18/Manchester_United_v_Newcastle_United%2C_11_September_2021_%2810%29.jpg',
+            answers: ['CRISTIANO RONALDO DOS SANTOS AVEIRO', 'CRISTIANO RONALDO', 'RONALDO', 'CR7', 'CR 7'],
+            descriptions: [
+                {
+                    name: 'Uyruk',
+                    value: 'Portekiz',
+                    isLink: false,
+                },
+                {
+                    name: 'Oynadığı Bazı Takımlar',
+                    value: 'Sporting CP, Manchester United, Real Madrid',
                     isLink: false,
                 },
             ],

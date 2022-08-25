@@ -49,7 +49,7 @@ function Main() {
 
     useEffect(() => {
         const gameStartDate = new Date('08/16/2022');
-        const initialDate = new Date('08/20/2022');
+        const initialDate = new Date('08/26/2022');
         const currentDate = new Date();
         const diffTime = Math.abs(currentDate - initialDate);
         const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
